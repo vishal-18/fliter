@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Covid Data of Different Countries">
+    <title>Covid Data</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="heading-container">
+                <h1 class="heading">Covid <span class="heading--colored">Data</span></h1>
+                <div class="filter-container">
+                     <div class="filter-dropdown">
+                        <label class="label-class" for="countries">Choose a Country : </label>
+                        <select class="select-dropdown js-select-dropdown" name="countries" id="countries">
+                        </select>
+                     </div>
+                </div>
+            </div>
+            <p class="display-country js-display-country">Showing Data For <span class="country-name js-country-name">India</span></p>
+            <div class="table-container">
+                <table class="table-wrapper">
+                    <thead>
+                        <tr>
+                            <th class="table-header">Active</th>
+                            <th class="table-header">Confirmed</th>
+                            <th class="table-header">Deaths</th>
+                            <th class="table-header">Recovered</th>
+                            <th class="table-header">Lat.</th>
+                            <th class="table-header">Long.</th>
+                            <th class="table-header">Date</th>
+                        </tr>
+                    </thead>
+                    <tr class="table-loader-wrapper js-table-loader-wrapper">
+                        <td class="table-loader">Loading...</tr>
+                    </tr>
+                    <tbody class="table-data js-table-data">
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination-container">
+                <span class="pagination-arrow pagination-arrow-previous js-pagination-arrow-previous"></span>
+                <div class="pagination-result">Showing <span class="js-current-pages total-pages"></span> of <span class="js-total-pages total-pages"></span> results</div>
+                <span class="pagination-arrow pagination-arrow-next js-pagination-arrow-next"></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/src/index.js"></script>
+</body>
+</html>
